@@ -1,8 +1,8 @@
 # Tantivy Examples on the Web
 
-this repo automatically converts [Tantivy](https://github.com/quickwit-oss/tantivy)'s [examples](https://github.com/quickwit-oss/tantivy/tree/main/examples) to web pages using docco and publishes them using Github Pages.
+this repo automatically converts [Tantivy](https://github.com/quickwit-oss/tantivy)'s [examples](https://github.com/quickwit-oss/tantivy/tree/main/examples) to web pages using docco and publishes them using Github Pages. this is run automatically once a day.
 
-[see the examples here](https://gregsadetsky.github.io/tantivy-examples-docs/)
+[see the examples here](https://gregsadetsky.github.io/tantivy-examples-docs/)!
 
 ---
 
