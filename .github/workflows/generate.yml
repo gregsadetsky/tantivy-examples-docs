@@ -14,12 +14,12 @@ jobs:
         run: |
           npm i -g docco
           # sudo apt update
-          # sudo apt install tree
+          sudo apt install tree
           git clone https://github.com/quickwit-oss/tantivy.git
           cd tantivy/examples
           docco *.rs -o ../../output
           cd ../../output
-          tree -T "" --noreport -H *.html > index.html
+          tree -T "" --noreport -H -P "*.html" -I "index.html" . > index.html
       - name: Upload static files as artifact
         id: deployment
         uses: actions/upload-pages-artifact@v3
