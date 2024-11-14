@@ -13,6 +13,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           npm i -g docco
+          sudo apt update
           sudo apt install tree
           git clone https://github.com/quickwit-oss/tantivy.git
           cd tantivy/examples
