@@ -19,7 +19,7 @@ jobs:
           cd tantivy/examples
           docco *.rs -o ../../output
           cd ../../output
-          tree -L 0 -P "*.html" -I "index.html" -T "" --noreport -H . > index.html
+          tree -L 1 -P "*.html" -I "index.html" -T "" --noreport -H . > index.html
       - name: Upload static files as artifact
         id: deployment
         uses: actions/upload-pages-artifact@v3
