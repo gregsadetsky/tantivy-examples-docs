@@ -13,9 +13,12 @@ jobs:
       - name: Run a multi-line script
         run: |
           npm i -g docco
+          sudo apt install tree
           git clone https://github.com/quickwit-oss/tantivy.git
           cd tantivy/examples
           docco *.rs -o ../../output
+          cd ../../output
+          tree --houtro "" -T "" --noreport -H . > index.html
       - name: Upload static files as artifact
         id: deployment
         uses: actions/upload-pages-artifact@v3
